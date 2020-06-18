@@ -50,6 +50,10 @@ header .elements .logo span {
     text-decoration: none;
 }
 
+nav:hover #mover{
+    opacity: 1;
+}
+
 nav #mover {
     position: absolute;
     height: 4px;
@@ -61,6 +65,7 @@ nav #mover {
     transition: .5s;
     border-radius: 4px;
     z-index: 2;
+    opacity: 0;
 }
 
 /*-- ORDER BUTTON --*/
@@ -85,6 +90,7 @@ header .elements button {
     border-radius: 20px;
     z-index: 2;
     overflow: hidden;
+    box-shadow: 0px 0px 7px 0px #1212126e;
 }
 
 .banner #line{
@@ -92,12 +98,12 @@ header .elements button {
     width: 30%;
     height: 150%;
     background-color: #f2ab41;
-    transform: rotate(40deg) translateY(100%);
+    transform: rotate(40deg) translateY(0);
     bottom: -10%;
     transition: .7s;
     border-radius: 25px;
 }
 
 .banner:hover #line{
-    transform: rotate(40deg) translateY(0);
+    transform: rotate(40deg) translateY(100%);
 }
