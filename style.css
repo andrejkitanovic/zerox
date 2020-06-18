@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 500vh;
+    background-color: #121212;
+}
+
+header {
+    height: 70vh;
+    background-color: #192065;
+    z-index: 1;
+    color: #fff;
+}
+
+header .elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+/*-- LOGO --*/
+
+header .elements .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header .elements .logo span {
+    color: #f2ab41;
+}
+
+/*-- NAVIGATION --*/
+
+.navigation {
+    position: relative;
+    display: flex;
+}
+
+.navigation a {
+    position: relative;
+    margin: 0 20px;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav #mover {
+    position: absolute;
+    height: 4px;
+    border-radius: 100px;
+    left: 0;
+    width: 0;
+    bottom: -8px;
+    background: #f2ab41;
+    transition: .5s;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+/*-- ORDER BUTTON --*/
+
+header .elements button {
+    background: #28bffe;
+    padding:10px 30px;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+}
+
+/*-- BANNER --*/
+
+.banner {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    width: 90%;
+    height: 80vh;
+    background-color: #2a338e ;
+    border-radius: 20px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.banner #line{
+    position: absolute;
+    width: 30%;
+    height: 150%;
+    background-color: #f2ab41;
+    transform: rotate(40deg) translateY(100%);
+    bottom: -10%;
+    transition: .7s;
+    border-radius: 25px;
+}
+
+.banner:hover #line{
+    transform: rotate(40deg) translateY(0);
+}
