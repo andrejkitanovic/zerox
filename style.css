@@ -6,14 +6,14 @@
 }
 
 body {
-  height: 500vh;
+  height: 100%;
   background-color: #121212;
 }
 
 header {
-  height: 70vh;
-  background-color: #192065;
-  z-index: 1;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
   color: #fff;
 }
 
@@ -78,6 +78,21 @@ header .elements button {
   color: #fff;
 }
 
+/*-- MAIN --*/
+.blue-home {
+  height: 70vh;
+  background: #192065;
+}
+
+.blue-contact {
+    position: absolute;
+  background: #192065;
+  height: 100%;
+  width: 50%;
+  right:0;
+  z-index:1;
+}
+
 /*-- BANNER --*/
 
 .banner {
@@ -117,40 +132,48 @@ header .elements button {
   margin-left: 30%;
 }
 
-.banner .title h1{
-    font-size: 140px;
+.banner .title h1 {
+  font-size: 140px;
 }
 
-.banner .title h3{
-    font-size: 60px;
-    margin-top:1%;
-    margin-bottom: 2%;
-    color:#f2ab41;
+.banner .title h3 {
+  font-size: 60px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  color: #f2ab41;
 }
 
-.banner .title button{
-    font-size: 20px;
-    margin-top: 10%;
-    padding:15px 80px;
-    background:#28bffe;
-    border:none;
-    border-radius: 5px;
-    color:#fff;
+.banner .title button {
+  font-size: 20px;
+  margin-top: 10%;
+  padding: 15px 80px;
+  background: #28bffe;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
 }
 
-.banner .scroll{
-    position: absolute;
-    left:50%;
+.banner .scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f2ab41;
+  animation: animacija 1s infinite linear both;
+}
+
+@keyframes animacija {
+  0% {
     bottom: 100px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background:#f2ab41;
-    animation: animacija 1s infinite linear both;
+  }
+  75% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 100px;
+  }
 }
 
-@keyframes animacija{
-    0%{bottom: 100px;}
-    75%{bottom: 10px;}
-    100%{bottom: 100px;}
-}
+/*-- CONTACT --*/
