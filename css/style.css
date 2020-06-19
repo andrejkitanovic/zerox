@@ -148,6 +148,8 @@ nav #mover {
   animation: a 1s 1 forwards;
   animation-delay: 0.6s;
   border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px #1212126e;
+  z-index: 6;
   
 }
 
@@ -170,6 +172,7 @@ nav #mover {
   bottom: -10%;
   animation: b 1s 1;
   border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px #1212126e;
   z-index: 5;
 }
 
