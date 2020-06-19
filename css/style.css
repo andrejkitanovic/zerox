@@ -181,6 +181,21 @@ nav #mover {
   z-index: 5;
 }
 
+.banner #lined {
+  position: absolute;
+  width: 25%;
+  height: 120%;
+  background-color: var(--components-color);
+  transform: rotate(-10deg) translateY(100%);
+  right: 5%;
+  bottom: -10%;
+  animation: d 1s 1 forwards;
+  animation-delay: .7s;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 0px #1212126e;
+  z-index: 4;
+}
+
 @keyframes a {
   from {
     transform: rotate(40deg) translateY(100%);
@@ -206,6 +221,15 @@ nav #mover {
   }
   to {
     transform: rotate(10deg) translateX(0);
+  }
+}
+
+@keyframes d {
+  from {
+    transform: rotate(-10deg) translateY(100%);
+  }
+  to {
+    transform: rotate(-10deg) translateY(0);
   }
 }
 
