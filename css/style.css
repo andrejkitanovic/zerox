@@ -321,22 +321,23 @@ nav #mover {
 .contact-info-icon i {
   font-size: 48px;
   color: #fff;
+  transform:translateZ(20px);
 }
-.contact-info-text p {
-  margin-bottom: 0px;
-}
+
 .contact-info-text h2 {
   color: #fff;
   font-size: 22px;
   text-transform: capitalize;
   font-weight: 600;
   margin-bottom: 10px;
+  transform:translateZ(20px);
 }
 .contact-info-text span {
   color: #fff;
   font-size: 14px;
   display: inline-block;
   width: 100%;
+  transform:translateZ(20px);
 }
 
 .contact-page-form input {
