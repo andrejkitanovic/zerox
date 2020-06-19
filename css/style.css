@@ -142,7 +142,7 @@ nav #mover {
 
 .banner #line {
   position: absolute;
-  width: 30%;
+  width: 25%;
   height: 150%;
   background-color: var(--components-color);
   transform: rotate(40deg) translateY(100%);
