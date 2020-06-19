@@ -292,7 +292,7 @@ nav #mover {
 /*-- PORTFOLIO --*/
 
 .portfolio {
-  margin-top: calc(350px + 5vh);
+  margin-top: 250px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -361,6 +361,7 @@ nav #mover {
   margin: 30px 0;
   border: none;
   border-radius: 11px;
+  transform-style: preserve-3d;
 }
 
 .cards-container .card .imgBx{
@@ -392,6 +393,7 @@ nav #mover {
   top: calc(50% - 75px);
   transition: 0.5s ease-in-out;
   background: var(--components-color);
+  transform:translateZ(80px);
 }
 
 .cards-container .card .imgBx:before{
@@ -435,7 +437,8 @@ nav #mover {
   display: inline-block;
   margin-top: 10px;
   padding: 5px 10px;
-  background: #333;
+  background: #fff;
+  border-radius: 5px;
   text-decoration: none;
   color: #fff;
 }
