@@ -25,13 +25,13 @@
 
 h2 {
   color: #fff;
-  font-size: 60px!important;
+  font-size: 60px !important;
   text-align: center;
 }
 
 body {
   height: 100%;
-  background-color: #121212!important;
+  background-color: #121212 !important;
 }
 
 header {
@@ -76,8 +76,8 @@ header .elements .logo span {
   text-decoration: none;
 }
 
-.navigation a:hover{
-  color:#fff;
+.navigation a:hover {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -160,7 +160,7 @@ nav #mover {
   right: -10%;
   bottom: -10%;
   animation: b 1s 1 forwards;
-  animation-delay: .6s;
+  animation-delay: 0.6s;
   border-radius: 25px;
 }
 
@@ -173,23 +173,21 @@ nav #mover {
   }
 }
 
-
-
 .banner .title {
-  font-size: 30px;
+  font-size: calc(20px + 1.5vw);
   text-align: right;
   margin-right: 5%;
-  margin-top: 2%;
+  margin-top: 5%;
   color: #fff;
   margin-left: 50%;
 }
 
 .banner .title h1 {
-  font-size: calc(20px + 4vw);
+  font-size: calc(40px + 3vw);
 }
 
 .banner .title h3 {
-  font-size: calc(20px + 2.5vw);
+  font-size: calc(30px + 1vw);
   margin-top: 1%;
   margin-bottom: 5%;
   color: #f2ab41;
@@ -197,7 +195,6 @@ nav #mover {
 
 .banner .title button {
   font-size: 20px;
-  margin-top: 10%;
   padding: 15px 80px;
   background: #28bffe;
   border: none;
@@ -239,3 +236,19 @@ nav #mover {
   text-align: center;
 }
 
+/*-- MOBILE --*/
+
+@media (max-width: 960px) {
+  header .navigation {
+    display: none;
+  }
+
+  .banner .title{
+    margin-top: 25%;
+    margin-left: 30%;
+  }
+
+  .banner #line {
+    left:-30%;
+  }
+}
