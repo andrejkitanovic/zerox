@@ -135,9 +135,11 @@ nav #mover {
 
 .banner .image{
   background: url('../image/background.jpg');
-  width: 600px;
-  height: 100%;
+  width: 500px;
+  height: 190%;
+  bottom: -50%;
   position: absolute;
+  transform: rotate(30deg);
 }
 
 .banner #line {
