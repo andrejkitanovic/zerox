@@ -359,8 +359,9 @@ nav #mover {
   border: none;
   border-radius: 11px;
   min-width: 400px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  box-shadow: 0px 0px 15px 0px #2a2a2a;
 }
 
 .cards-container .card .imgBx{
@@ -479,6 +480,14 @@ nav #mover {
     position: relative;
     width: 100%;
   }
+}
+
+/*-- TEST --*/
+
+.test {
+  height:500px;
+  background:var(--main-color);
+  margin:5% 0;
 }
 
 /*-- CONTACT --*/
