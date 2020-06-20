@@ -28,7 +28,7 @@ body {
   --background-color: #ececec;
   --main-color: #101011;
   --main-lighter-color: #171718;
-  --components-color: #ff7b00bd;
+  --components-color: #f6c41a;
   height: 100%;
   background-color: var(--background-color) !important;
 }
