@@ -332,24 +332,21 @@ nav #mover {
   }
 }
 
-/*-- CARDS --*/
-
 /* -- CARDS -- */
 .cards-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  /* background: #222; */
 }
 
 .cards-container{
   position: relative;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .cards-container .card{
@@ -361,7 +358,9 @@ nav #mover {
   margin: 30px 0;
   border: none;
   border-radius: 11px;
-  transform-style: preserve-3d;
+  min-width: 400px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .cards-container .card .imgBx{
@@ -404,7 +403,7 @@ nav #mover {
   width: 100%;
   text-align: center;
   font-size: 2em;
-  color: rgba(255, 255, 255, .05);
+  color: rgba(255, 255, 255, .15);
   font-weight: 700;
 }
 .cards-container .card:hover .imgBx:before{
@@ -414,7 +413,6 @@ nav #mover {
 
 .cards-container .card:hover .imgBx i{
   max-width: 75px;
-  /* transition: 0.5s ease-in-out; */
 }
 
 .cards-container .card .card-content{
@@ -431,12 +429,13 @@ nav #mover {
 .cards-container .card .card-content h3{
   margin-bottom: 5px;
   font-size: 24px;
+  font-weight:bold;
 }
 
 .cards-container .card .card-content a{
   display: inline-block;
   margin-top: 10px;
-  padding: 5px 10px;
+  padding: 5px 25px;
   background: #2a338e;
   border-radius: 5px;
   text-decoration: none;
@@ -460,6 +459,7 @@ nav #mover {
     max-width: 300px;
     flex-direction: column;
     height: auto;
+    min-width: 0;
   }
   .cards-container .card .imgBx{
     position: relative;
@@ -521,7 +521,7 @@ nav #mover {
 .contact-info-icon i {
   font-size: 48px;
   color: #fff;
-  transform:translateZ(20px);
+  transform:translateZ(40px);
 }
 
 .contact-info-text h2 {
@@ -530,14 +530,14 @@ nav #mover {
   text-transform: capitalize;
   font-weight: 600;
   margin-bottom: 10px;
-  transform:translateZ(20px);
+  transform:translateZ(40px);
 }
 .contact-info-text span {
   color: #fff;
   font-size: 14px;
   display: inline-block;
   width: 100%;
-  transform:translateZ(20px);
+  transform:translateZ(40px);
 }
 
 .contact-page-form input {
