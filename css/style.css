@@ -27,7 +27,7 @@
 body {
   --background-color: #ececec;
   --main-color: #101011;
-  --main-lighter-color: #171718;
+  --main-lighter-color: rgb(78, 78, 78);
   --components-color: #f6c41a;
   height: 100%;
   background-color: var(--background-color) !important;
@@ -119,13 +119,14 @@ nav #mover {
 /*-- BANNER --*/
 
 .banner {
+  background: url(../image/background.jpg);
+  background-size: cover;
   position: absolute;
   left: 5%;
   top: 150px;
   width: 90%;
   height: 80vh;
   min-height: 650px;
-  background-color: var(--main-lighter-color);
   border-radius: 20px;
   z-index: 2;
   overflow: hidden;
