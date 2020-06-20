@@ -480,6 +480,10 @@ nav #mover {
     position: relative;
     width: 100%;
   }
+
+  .cards-container .card .imgBx:before{
+    display: none;
+  }
 }
 
 /*-- TEST --*/
@@ -599,6 +603,7 @@ nav #mover {
   height: 150px;
   padding: 12px 16px;
   border-radius: 4px;
+  outline: none;
 }
 .contact-page-form {
   display: inline-block;
