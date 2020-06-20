@@ -107,6 +107,11 @@ nav #mover {
   background: var(--main-color);
 }
 
+.blue-index {
+  height: 100vh;
+  background: var(--main-color);
+}
+
 .blue-contact {
   position: absolute;
   background: var(--main-color);
@@ -627,4 +632,12 @@ nav #mover {
 
 .about-us p {
   font-size: 25px;
+}
+
+/*-- TEST --*/ 
+.blue-index canvas{
+  width: 100%;
+  height: 100%;
+  content-zooming: none;
+  box-sizing: border-box;
 }
