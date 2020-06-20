@@ -103,7 +103,7 @@ nav #mover {
 /*-- MAIN --*/
 
 .blue-home {
-  height: calc(450px + 25vh);
+  height: calc(100px + 65vh);
   background: var(--main-color);
 }
 
