@@ -121,10 +121,10 @@ nav #mover {
 .banner {
   position: absolute;
   left: 5%;
-  top: calc(10px + 12vh);
+  top: 150px;
   width: 90%;
-  height: calc(70vh + 5vw);
-  min-height: 550px;
+  height: 80vh;
+  min-height: 650px;
   background-color: var(--main-lighter-color);
   border-radius: 20px;
   z-index: 2;
