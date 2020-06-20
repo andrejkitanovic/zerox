@@ -27,7 +27,7 @@
 body {
   --background-color: #ececec;
   --main-color: #101011;
-  --main-lighter-color: rgb(78, 78, 78);
+  --main-lighter-color: rgb(32, 32, 32);
   --components-color: #f6c41a;
   height: 100%;
   background-color: var(--background-color) !important;
@@ -119,19 +119,25 @@ nav #mover {
 /*-- BANNER --*/
 
 .banner {
-  background: url(../image/background.jpg);
-  background-size: cover;
   position: absolute;
   left: 5%;
   top: 150px;
   width: 90%;
   height: 80vh;
   min-height: 650px;
+  background-color: var(--main-lighter-color);
   border-radius: 20px;
   z-index: 2;
   overflow: hidden;
   box-shadow: 0px 0px 7px 0px #1212126e;
   transform-style: preserve-3d;
+}
+
+.banner .image{
+  background: url('../image/background.jpg');
+  width: 600px;
+  height: 100%;
+  position: absolute;
 }
 
 .banner #line {
