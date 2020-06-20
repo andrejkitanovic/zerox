@@ -87,9 +87,9 @@ demo.spawn = function( x, y ) {
         pool.push( particles.shift() );
 
     particle = pool.length ? pool.pop() : new Particle();
-    particle.init( x, y, random( 15, 60 ) );
+    particle.init( x, y, random( 35, 40 ) );
 
-    particle.wander = random( 0.5, 2.0 );
+    particle.wander = random( 1, 2.0 );
     particle.color = random( COLOURS );
     particle.drag = random( 0.9, 0.99 );
 
