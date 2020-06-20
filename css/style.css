@@ -641,21 +641,3 @@ nav #mover {
   content-zooming: none;
   box-sizing: border-box;
 }
-
-.blue-index .text1{
-  position: absolute;
-  color:#f2ab41;
-  left:10%;
-  top:35%;
-  font-size: 150px;
-  text-transform: uppercase;
-}
-
-.blue-index .text2{
-  position: absolute;
-  color:#f2ab41;
-  right:8%;
-  top:35%;
-  font-size: 150px;
-  text-transform: uppercase;
-}
