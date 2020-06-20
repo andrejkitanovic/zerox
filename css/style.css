@@ -103,7 +103,7 @@ nav #mover {
 /*-- MAIN --*/
 
 .blue-home {
-  height: calc(650px + 10vh);
+  height: calc(450px + 25vh);
   background: var(--main-color);
 }
 
@@ -123,8 +123,8 @@ nav #mover {
   left: 5%;
   top: 150px;
   width: 90%;
-  height: 80vh;
-  min-height: 650px;
+  height: 75vh;
+  min-height: 550px;
   background-color: var(--main-lighter-color);
   border-radius: 20px;
   z-index: 2;
