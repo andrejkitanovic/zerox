@@ -87,14 +87,14 @@ demo.spawn = function( x, y ) {
         pool.push( particles.shift() );
 
     particle = pool.length ? pool.pop() : new Particle();
-    particle.init( x, y, random( 5, 40 ) );
+    particle.init( x, y, random( 50, 40 ) );
 
     particle.wander = random( 0.5, 2.0 );
     particle.color = random( COLOURS );
     particle.drag = random( 0.9, 0.99 );
 
     theta = random( TWO_PI );
-    force = random( 2, 8 );
+    force = random( 0,0 );
 
     particle.vx = sin( theta ) * force;
     particle.vy = cos( theta ) * force;
