@@ -647,6 +647,12 @@ nav #mover {
 }
 
 @media (max-width: 992px) {
+  #sun {
+    display:none;
+  }
+  .logo-background{
+    display:block!important;
+  }
   .blue-index {
     height: 90vh;
   }
@@ -760,6 +766,9 @@ nav #mover {
 }
 
 @media screen and (max-width: 992px) {
+  header .elements .logo img{
+    display:none;
+  }
   .mobile-nav {
     width: 100%;
     display: block;
@@ -871,4 +880,13 @@ nav #mover {
     transform: translateY(160px);
     opacity: 0;
   }
+}
+
+.logo-background{
+  display:none;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width:40vh;
 }
