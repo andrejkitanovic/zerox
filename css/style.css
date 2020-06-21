@@ -644,6 +644,10 @@ nav #mover {
 }
 
 @media (max-width: 992px) {
+  header .elements{
+    background:var(--main-lighter-color);
+  }
+
   .blue-index {
     height: 90vh;
   }
@@ -689,11 +693,6 @@ nav #mover {
 }
 
 @media (max-width: 768px) {
-  header .elements{
-    padding:10px;
-    background:var(--main-color);
-  }
-
   .cards-container .card {
     max-width: 300px;
     flex-direction: column;
