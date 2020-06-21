@@ -58,6 +58,7 @@ header .elements .logo {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  text-shadow: 0 0 20px #2a338e;
 }
 
 header .elements .logo span {
@@ -749,7 +750,6 @@ nav #mover {
   .mobile-nav{
     width: 100%;
     display: block;
-
   }
 
   .nav-links{
@@ -761,6 +761,7 @@ nav #mover {
     height: 3px;
     background: #fff;
     margin: 8px;
+    box-shadow: 0 0 20px 0px #2a338e;
   }
 
 
