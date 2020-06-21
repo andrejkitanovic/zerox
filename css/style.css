@@ -684,6 +684,12 @@ nav #mover {
   .text-auto > div:after {
     width: 10px;
   }
+
+  .center{
+    left: 90% !important;
+    bottom: 5%;
+    transform: translate(-90%,-5%) !important;
+  }
 }
 
 @media (max-width: 768px) {
