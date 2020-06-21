@@ -758,24 +758,33 @@ nav #mover {
     display: flex;
   }
 
-  .line {
-    width: 38px;
-    height: 3px;
-    background: #fff;
-    margin: 8px;
-  }
-
-  .elements {
-    position: fixed;
-    width: 100%;
-  }
-
   .hamburger {
     position: absolute;
     cursor: pointer;
     right: 5%;
     top: 50%;
     transform: translate(-5%, -40%);
+  }
+
+  .rotate-line > .line:nth-child(1){
+    transform: rotate(125deg);
+  }
+
+  .rotate-line > .line:nth-child(2){
+    transform: rotate(-125deg);
+  }
+
+  .line {
+    width: 38px;
+    height: 3px;
+    background: #fff;
+    margin: 8px;
+    transition: .5s;
+  }
+
+  .elements {
+    position: fixed;
+    width: 100%;
   }
 
   .nav-links {
