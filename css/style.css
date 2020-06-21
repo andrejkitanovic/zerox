@@ -289,7 +289,8 @@ nav #mover {
 /*-- PORTFOLIO --*/
 
 .section {
-  margin-top: 5%;
+  margin-top: 10%;
+  margin-bottom: 2%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -589,6 +590,10 @@ nav #mover {
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+}
+
+.text-auto .white{
+  color:#fff!important;
 }
 
 .text-auto .item {

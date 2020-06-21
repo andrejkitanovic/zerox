@@ -11,7 +11,7 @@ async function writingAll (stringTarget, container){
       await write(string)
       await sleep(1000)
       await erase()
-      await sleep(1000)
+      await sleep(500)
     };
   }
 };
@@ -29,7 +29,7 @@ async function write(text){
 
 async function erase() {
   while(wrapper.textContent.length){
-    const timeout = 100
+    const timeout = 70
     await sleep(timeout)
     wrapper.textContent = wrapper.textContent.substring(0, wrapper.textContent.length - 2)
   }
