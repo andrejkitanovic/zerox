@@ -661,6 +661,7 @@ nav #mover {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 
 .text-auto .item {
@@ -680,8 +681,8 @@ nav #mover {
 
 .text-auto > div:after {
   content: "";
-  width: 20px;
-  height: 4px;
+  width: 40px;
+  height: 6px;
   display: block;
   background: #fff;
   color: orange;
