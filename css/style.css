@@ -294,7 +294,7 @@ nav #mover {
 /*-- PORTFOLIO --*/
 
 .section {
-  margin-top: 10%;
+  margin-top: calc(100px + 5%);
   margin-bottom: 2%;
   margin-left: 10%;
   margin-right: 10%;
