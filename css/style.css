@@ -722,6 +722,7 @@ nav #mover {
 }
 
 /* MOBILE NAV */
+
 .mobile-nav {
   display: none;
 }
@@ -779,7 +780,7 @@ nav #mover {
 
   .line:nth-child(2){
     top:10px;
-    width:20px;
+    width:22px;
   }
 
   .rotate-line > .line:nth-child(1){
@@ -793,8 +794,6 @@ nav #mover {
     width:38px;
   }
 
- 
-
   .elements {
     position: fixed;
     width: 100%;
@@ -805,7 +804,7 @@ nav #mover {
     height: 100%;
     width: 100%;
     flex-direction: column;
-    background: var(--main-lighter-color);
+    background-image: linear-gradient(30deg ,var(--main-lighter-color) 40%,var(--main-color) 100%);
     clip-path: circle(0 at 90% -50%);
     -webkit-clip-path: circle(0 at 90% -50%);
     transition: all 1s ease-out;
