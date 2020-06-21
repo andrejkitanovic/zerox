@@ -589,6 +589,7 @@ nav #mover {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  margin-right: -50%;
   z-index: 10;
 }
 
@@ -602,7 +603,7 @@ nav #mover {
 }
 
 .text-auto > div {
-  font-size: calc(15px + 3vw);
+  font-size: calc(30px + 2vw);
   min-height: 20px;
   letter-spacing: 1px;
   display: flex;

@@ -57,8 +57,7 @@ const loop = () => {
 };
 const handleResize = () => {
 	canvas.width = window.innerWidth;
-	// canvas.height = window.innerHeight;
-	canvas.height = document.querySelector(".blue-index").offsetHeight;
+	canvas.height = canvas.parentElement.offsetHeight;
 };
 window.onresize = handleResize;
 handleResize();
