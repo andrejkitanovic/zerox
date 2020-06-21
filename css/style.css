@@ -31,7 +31,7 @@ body {
   --components-color: #f2ab41;
   height: 100%;
   background-color: var(--background-color) !important;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /*-- HEADER --*/
@@ -331,6 +331,8 @@ nav #mover {
     justify-content: space-between;
     padding: 20px;
   }
+
+  
 }
 
 /* -- CARDS -- */
@@ -639,6 +641,7 @@ nav #mover {
 }
 
 .blue-index canvas{
+  position: absolute;
   width: 100%;
   height: 100%;
   content-zooming: none;
