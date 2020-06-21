@@ -615,6 +615,7 @@ nav #mover {
   letter-spacing: 1px;
   display: flex;
   align-items: flex-end;
+  font-weight: bold;
   color: var(--components-color);
   font-family: 'Zilla Slab Highlight', cursive;
 }
@@ -677,6 +678,10 @@ nav #mover {
 
   #container {
     display: none;
+  }
+
+  .text-auto > div:after{
+    width:10px;
   }
 
 }
