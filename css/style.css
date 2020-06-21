@@ -624,7 +624,6 @@ nav #mover {
   height: 4px;
   display: block;
   background: #fff;
-  color: orange;
   margin-bottom: 4px;
   margin-left: 2px;
   animation-duration: 350ms;
@@ -643,6 +642,9 @@ nav #mover {
 }
 
 @media (max-width: 992px) {
+  .blue-index {
+    height: 80vh;
+  }
   .cards-container {
     width: 100%;
     flex-direction: column;
@@ -676,6 +678,10 @@ nav #mover {
 
   #container {
     display: none;
+  }
+
+  .text-auto{
+    bottom:20%;
   }
 
   .text-auto > div:after{
