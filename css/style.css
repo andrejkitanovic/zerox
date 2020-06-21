@@ -644,10 +644,6 @@ nav #mover {
 }
 
 @media (max-width: 992px) {
-  header .elements{
-    background:var(--main-lighter-color);
-  }
-
   .blue-index {
     height: 90vh;
   }
