@@ -107,6 +107,11 @@ nav #mover {
 
 /*-- MAIN --*/
 
+.blue-home {
+  height:80vh;
+  background:var(--main-color);
+}
+
 .blue-contact {
   position: absolute;
   background: var(--main-color);
@@ -308,11 +313,8 @@ nav #mover {
   text-align: center;
 }
 
-/*-- MOBILE --*/
-
-
-
 /* -- CARDS -- */
+
 .cards-wrapper {
   display: flex;
   justify-content: center;
@@ -596,10 +598,6 @@ nav #mover {
   
 }
 
-.text-auto .white{
-  color:#fff!important;
-}
-
 .text-auto .item {
   visibility: hidden;
   display: none;
@@ -712,4 +710,7 @@ nav #mover {
     display: none;
   }
 
+  .text-auto{
+    bottom:5%;
+  }
 }
