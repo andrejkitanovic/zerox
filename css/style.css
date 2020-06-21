@@ -603,7 +603,7 @@ nav #mover {
 }
 
 .text-auto > div {
-  font-size: calc(28px + 2.5vw);
+  font-size: calc(26px + 2.5vw);
   min-height: 20px;
   letter-spacing: 1px;
   display: flex;
