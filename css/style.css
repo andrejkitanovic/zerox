@@ -123,7 +123,6 @@ nav #mover {
   top: 150px;
   width: 90%;
   height: 80vh;
-  min-height: 650px;
   background-color: var(--main-lighter-color);
   border-radius: 20px;
   z-index: 2;
@@ -373,6 +372,7 @@ nav #mover {
   transition: 0.5s ease-in-out;
   background: var(--components-color);
   transform: translateZ(80px);
+  border-radius: 5px;
 }
 
 .cards-container .card .imgBx:before {
@@ -648,6 +648,10 @@ nav #mover {
 
   header .navigation {
     display: none;
+  }
+
+  .banner{
+    top:100px;
   }
 
   .banner .title {
