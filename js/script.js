@@ -49,7 +49,7 @@ const drawBackground = () => {
 };
 const loop = () => {
 	drawBackground();
-	const sz = (Math.min(canvas.width, canvas.height) / 3) * 1.8;
+	const sz = (Math.min(canvas.width, canvas.height) / 3) * 2;
 	drawGradient(sz);
 	drawLines(sz);
 	t += 0.5;
