@@ -107,11 +107,6 @@ nav #mover {
 
 /*-- MAIN --*/
 
-.blue-home {
-  height: calc(100px + 65vh);
-  background: var(--main-color);
-}
-
 .blue-contact {
   position: absolute;
   background: var(--main-color);
@@ -567,6 +562,7 @@ nav #mover {
 /*-- COMMET AND MOON --*/
 
 .blue-index {
+  position: relative;
   height: 100vh;
   background: var(--main-color);
 }
@@ -678,10 +674,6 @@ nav #mover {
 
   #container {
     display: none;
-  }
-
-  .text-auto{
-    bottom:20%;
   }
 
   .text-auto > div:after{
