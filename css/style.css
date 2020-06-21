@@ -597,6 +597,7 @@ nav #mover {
   transform: translateX(-50%);
   margin-right: -50%;
   z-index: 10;
+  
 }
 
 .text-auto .white{
@@ -614,8 +615,8 @@ nav #mover {
   letter-spacing: 1px;
   display: flex;
   align-items: flex-end;
-  font-weight: bold;
   color: var(--components-color);
+  font-family: 'Zilla Slab Highlight', cursive;
 }
 
 .text-auto > div:after {
