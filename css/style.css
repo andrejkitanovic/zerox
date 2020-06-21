@@ -64,6 +64,10 @@ header .elements .logo span {
   color: var(--components-color);
 }
 
+header .elements .logo img{
+  margin-right: 10px;
+}
+
 /*-- NAVIGATION --*/
 
 .navigation {
