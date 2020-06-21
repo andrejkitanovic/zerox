@@ -703,4 +703,8 @@ nav #mover {
   .cards-container .card .imgBx:before {
     display: none;
   }
+
+  .text-auto {
+    bottom:77%;
+  }
 }
