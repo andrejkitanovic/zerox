@@ -9,18 +9,21 @@
 
 ::-webkit-scrollbar {
   width: 15px;
-  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
-  border-radius: 10px;
+  background-color: var(--main-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--components-color);
+  background: linear-gradient(transparent,var(--components-color));
   border-radius: 10px;
+}
+
+/*-- VARIABLES --*/
+
+html {
+  overflow-y: scroll;
 }
 
 body {
@@ -72,12 +75,15 @@ header .elements .logo span {
   position: relative;
   margin: 0 20px;
   font-size: 1.1em;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
+.navigation .active{
+  color:var(--components-color)!important;
+}
+
 .navigation a:hover {
-  color: #fff;
   text-decoration: none;
 }
 
