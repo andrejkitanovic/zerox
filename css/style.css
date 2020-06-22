@@ -581,6 +581,7 @@ nav #mover {
   position: relative;
   height: 100vh;
   background: linear-gradient(#192065aa 0%, var(--main-color) 50%);
+  min-height: 600px;
 }
 
 .blue-index canvas {
