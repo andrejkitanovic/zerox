@@ -45,6 +45,8 @@ header {
 }
 
 header .elements {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -432,7 +434,7 @@ nav #mover {
 
 .stats {
   height: 500px;
-  background: #192065;
+  background: linear-gradient(var(--main-lighter-color) 50%,var(--main-color) 100%);
   margin: 5% 0;
 }
 
@@ -578,7 +580,7 @@ nav #mover {
 .blue-index {
   position: relative;
   height: 100vh;
-  background: linear-gradient(#192065aa 0%,var(--main-color) 50%);
+  background: linear-gradient(#192065aa 0%, var(--main-color) 50%);
 }
 
 .blue-index canvas {
@@ -695,11 +697,11 @@ nav #mover {
   }
 
   #sun {
-    display:none;
+    display: none;
   }
 
-  .text-auto{
-    top:50%;
+  .text-auto {
+    top: 50%;
     transform: translateX(-50%);
   }
 }
@@ -756,7 +758,7 @@ nav #mover {
   margin-left: auto;
 }
 
-.nav-links li{
+.nav-links li {
   overflow: hidden;
 }
 
@@ -768,25 +770,25 @@ nav #mover {
   z-index: 16;
 }
 
-.nav-links a::before{
-  content: '';
+.nav-links a::before {
+  content: "";
   position: absolute;
-  background:#f2ab41;
-  bottom:5%;
-  left:0;
+  background: #f2ab41;
+  bottom: 5%;
+  left: 0;
   width: 100%;
-  height:40%;
-  z-index:-1;
-  transition: .5s;
+  height: 40%;
+  z-index: -1;
+  transition: 0.5s;
   transform: translateX(110%);
 }
 
-.nav-links li:nth-child(2n) a::before{
-  transform: translateX(-110%)!important;
+.nav-links li:nth-child(2n) a::before {
+  transform: translateX(-110%) !important;
 }
 
-.nav-links li:hover a::before{
-  transform: translateX(0)!important;
+.nav-links li:hover a::before {
+  transform: translateX(0) !important;
 }
 
 .nav-links a:hover {
@@ -800,11 +802,11 @@ nav #mover {
     display: block;
   }
 
-  .elements .logo{
-    display:flex;
+  .elements .logo {
+    display: flex;
     align-items: center;
   }
-  .elements .logo img{
+  .elements .logo img {
     width: 30px;
     height: 40.66px;
   }
@@ -845,11 +847,6 @@ nav #mover {
     top: 5px !important;
     transform: rotate(-135deg);
     width: 38px;
-  }
-
-  .elements {
-    position: fixed;
-    width: 100%;
   }
 
   .nav-links {
