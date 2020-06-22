@@ -770,17 +770,18 @@ nav #mover {
   }
 
   .text-auto {
-    top:20%;
+    top:30%;
   }
 
   .text-auto h2{
     display: block;
     color:#fff;
-    font-size: 60px;
+    font-size: calc(40px + 6vw);
   }
 
   .text-auto > div {
     height:50px;
+    font-size: calc(15px + 3vw);
   }
 
   .text-auto > div:after {
