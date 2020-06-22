@@ -578,7 +578,7 @@ nav #mover {
 .blue-index {
   position: relative;
   height: 100vh;
-  background: linear-gradient(#192065db 0%,var(--main-color) 55%);
+  background: linear-gradient(#192065aa 0%,var(--main-color) 50%);
 }
 
 .blue-index canvas {
@@ -911,7 +911,7 @@ nav #mover {
   }
 }
 
-#video {
+#background {
   height: 50vh;
   width: 100vw;
   object-fit: cover;
