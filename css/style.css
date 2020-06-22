@@ -579,7 +579,7 @@ nav #mover {
 
 .blue-index {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   background: linear-gradient(#192065aa 0%, var(--main-color) 50%);
   min-height: 600px;
 }
@@ -764,7 +764,6 @@ nav #mover {
   z-index: -1;
 }
 
-
 @media (max-width: 992px) {
   .blue-index {
     height: 90vh;
@@ -944,5 +943,11 @@ nav #mover {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(150% at 90% -10%);
     pointer-events: all;
+  }
+}
+
+@media only screen{
+  .blue-index {
+    height: 100vh;
   }
 }
