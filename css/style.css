@@ -689,9 +689,18 @@ nav #mover {
   }
 
   .center {
-    left: 90% !important;
+    left: 50% !important;
     bottom: 5%;
-    transform: translate(-90%, -5%) !important;
+    transform: translate(-50%, -5%) !important;
+  }
+
+  #sun {
+    display:none;
+  }
+
+  .text-auto{
+    top:50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -885,6 +894,7 @@ nav #mover {
   background: var(--components-color);
   animation: animate 2s infinite;
 }
+
 .arrow:before {
   content: "";
   position: absolute;
@@ -896,6 +906,7 @@ nav #mover {
   border-right: 6px solid var(--components-color);
   transform: rotate(45deg);
 }
+
 @keyframes animate {
   0% {
     transform: translateY(0);
