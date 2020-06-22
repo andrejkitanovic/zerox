@@ -64,7 +64,7 @@ header .elements .logo span {
   color: var(--components-color);
 }
 
-header .elements .logo img{
+header .elements .logo img {
   margin-right: 15px;
 }
 
@@ -584,7 +584,6 @@ nav #mover {
 .blue-index canvas {
   width: 100%;
   height: 100%;
-  content-zooming: none;
   box-sizing: border-box;
 }
 
@@ -689,10 +688,10 @@ nav #mover {
     width: 10px;
   }
 
-  .center{
+  .center {
     left: 90% !important;
     bottom: 5%;
-    transform: translate(-90%,-5%) !important;
+    transform: translate(-90%, -5%) !important;
   }
 }
 
@@ -740,7 +739,7 @@ nav #mover {
 .nav-links {
   list-style: none;
   display: none;
-  padding-top: 10%;
+  padding-top: 15%;
   width: 50%;
   height: 90%;
   justify-content: space-around;
@@ -748,10 +747,37 @@ nav #mover {
   margin-left: auto;
 }
 
+.nav-links li{
+  overflow: hidden;
+}
+
 .nav-links a {
+  position: relative;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 25px;
+  z-index: 16;
+}
+
+.nav-links a::before{
+  content: '';
+  position: absolute;
+  background:#f2ab41;
+  bottom:5%;
+  left:0;
+  width: 100%;
+  height:40%;
+  z-index:-1;
+  transition: .5s;
+  transform: translateX(110%);
+}
+
+.nav-links li:nth-child(2n) a::before{
+  transform: translateX(-110%)!important;
+}
+
+.nav-links li:hover a::before{
+  transform: translateX(0)!important;
 }
 
 .nav-links a:hover {
@@ -760,14 +786,19 @@ nav #mover {
 }
 
 @media screen and (max-width: 992px) {
-  header .elements .logo img{
-    display:none;
-  }
   .mobile-nav {
     width: 100%;
     display: block;
   }
 
+  .elements .logo{
+    display:flex;
+    align-items: center;
+  }
+  .elements .logo img{
+    width: 30px;
+    height: 40.66px;
+  }
   .nav-links {
     display: flex;
   }
@@ -777,34 +808,34 @@ nav #mover {
     cursor: pointer;
     right: 5%;
     top: 45%;
-    width:38px;
-    height:50px;
+    width: 38px;
+    height: 50px;
   }
 
   .line {
     position: absolute;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
     width: 38px;
     height: 3px;
     background: #fff;
-    transition: .5s;
+    transition: 0.5s;
   }
 
-  .line:nth-child(2){
-    top:10px;
-    width:22px;
+  .line:nth-child(2) {
+    top: 10px;
+    width: 22px;
   }
 
-  .rotate-line > .line:nth-child(1){
-    top:5px!important;
+  .rotate-line > .line:nth-child(1) {
+    top: 5px !important;
     transform: rotate(135deg);
   }
 
-  .rotate-line > .line:nth-child(2){
-    top:5px!important;
+  .rotate-line > .line:nth-child(2) {
+    top: 5px !important;
     transform: rotate(-135deg);
-    width:38px;
+    width: 38px;
   }
 
   .elements {
@@ -817,7 +848,11 @@ nav #mover {
     height: 100%;
     width: 100%;
     flex-direction: column;
-    background-image: linear-gradient(30deg ,var(--main-lighter-color) 40%,var(--main-color) 100%);
+    background-image: linear-gradient(
+      30deg,
+      var(--main-lighter-color) 40%,
+      var(--main-color) 100%
+    );
     clip-path: circle(0 at 90% -50%);
     -webkit-clip-path: circle(0 at 90% -50%);
     transition: all 1s ease-out;
