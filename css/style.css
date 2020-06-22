@@ -578,7 +578,7 @@ nav #mover {
 .blue-index {
   position: relative;
   height: 100vh;
-  background: var(--main-color);
+  background: linear-gradient(#192065db 0%,var(--main-color) 55%);
 }
 
 .blue-index canvas {
@@ -909,4 +909,14 @@ nav #mover {
     transform: translateY(160px);
     opacity: 0;
   }
+}
+
+#video {
+  height: 50vh;
+  width: 100vw;
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

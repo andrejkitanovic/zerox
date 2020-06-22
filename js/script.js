@@ -42,13 +42,7 @@ const drawGradient = (sz) => {
 	ctx.arc(canvas.width / 2, canvas.height / 2, sz / 2, 0, Math.PI * 2);
 	ctx.fill();
 };
-const drawBackground = () => {
-	ctx.beginPath();
-	ctx.fillStyle = colors[0];
-	ctx.fillRect(0, 0, canvas.width, canvas.height);
-};
 const loop = () => {
-	drawBackground();
 	//Size
 	const sz = (Math.min(canvas.width, canvas.height) / 3) * 2;
 	drawGradient(sz);
