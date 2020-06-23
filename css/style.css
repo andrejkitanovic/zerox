@@ -993,5 +993,5 @@ nav #mover {
   padding-top:10px!important;
   padding-bottom: 10px!important;
   background:var(--main-lighter-color);
-  box-shadow: 0 0 15px 5px var(--main-color);
+  box-shadow: 0 0 15px #2a338e;
 }
