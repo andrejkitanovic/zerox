@@ -1007,14 +1007,48 @@ nav #mover {
   z-index: 100;
 }
 
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #f2ab41;
-  width: 120px;
+.loader{
+  top: 40px;
+  left: -2.5px;
+}
+
+.loader span{
+  display: inline-block;
+  width: 40px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
+  background-color: #f2ab41;
+}
+
+.loader span:nth-child(1){
+  animation: grow 1s ease-in-out infinite;
+}
+
+.loader span:nth-child(2){
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader span:nth-child(3){
+  animation: grow 1s ease-in-out 0.30s infinite;
+}
+
+.loader span:nth-child(4){
+  animation: grow 1s ease-in-out 0.45s infinite;
+}
+
+@keyframes grow{
+  0%, 100%{
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  50%{
+    -webkit-transform: scaleY(1.8);
+    -ms-transform: scaleY(1.8);
+    -o-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
 }
 
 /* Safari */
