@@ -114,7 +114,8 @@ nav #mover {
 /*-- MAIN --*/
 
 .blue-home {
-  height: 80vh;
+  padding-top: 20vh;
+  height: 100vh;
   background: var(--main-color);
 }
 
@@ -437,8 +438,6 @@ nav #mover {
 /*-- CONTACT --*/
 
 .contact-page-sec {
-  position: absolute;
-  top: 5%;
   width: 100%;
   z-index: 3;
 }
