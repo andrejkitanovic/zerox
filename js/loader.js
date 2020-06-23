@@ -1,3 +1,5 @@
-$(window).on("load", function () {
-    $(".loader_bg").fadeOut("slow");
-  });
+window.onload = function() {
+  setTimeout(function() {
+    $('.loader_bg').fadeToggle();
+  }, 1000);
+}
