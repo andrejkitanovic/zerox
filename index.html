@@ -34,12 +34,10 @@
     <header>
       <div class="elements">
         <a href="#" class="logo"
-          ><img src="image/logo.png" alt="" />zer<span
-            >ox</span
-          ></a
+          ><img src="image/logo.png" alt="" />zer<span>ox</span></a
         >
         <nav>
-          <div class="navigation ">
+          <div class="navigation">
             <div id="mover"></div>
             <a href="#" class="active">Home</a>
             <a href="about.html">About</a>
@@ -67,6 +65,10 @@
     </ul>
 
     <main>
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+
       <div class="blue-index">
         <img src="image/Screenshot_29-min.png" id="background" />
 
@@ -208,12 +210,8 @@
       </div>
     </main>
 
-
-
-
     <script src="libs/jquery.waypoints.min.js"></script>
     <script src="libs/jquery.counterup.min.js"></script>
-    
 
     <script src="js/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
@@ -223,18 +221,21 @@
     <script src="js/nav.js"></script>
 
     <script>
-
-      $(".number").counterUp({
-        time:1000
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
       });
 
-      $(window).on('scroll', () => {
-        if($(window).scrollTop()){
-          $('.elements').addClass('scrolled');
-        }else {
-          $('.elements').removeClass('scrolled');
+      $(".number").counterUp({
+        time: 1000,
+      });
+
+      $(window).on("scroll", () => {
+        if ($(window).scrollTop()) {
+          $(".elements").addClass("scrolled");
+        } else {
+          $(".elements").removeClass("scrolled");
         }
-      })
+      });
     </script>
   </body>
 </html>
