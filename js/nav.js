@@ -7,3 +7,11 @@ hamburger.addEventListener('click', () => {
 	navLinks.classList.toggle("open");
 	hamburger.classList.toggle("rotate-line");
 });
+
+$(window).on("scroll", () => {
+	if ($(window).scrollTop()) {
+	  $(".elements").addClass("scrolled");
+	} else {
+	  $(".elements").removeClass("scrolled");
+	}
+  });
