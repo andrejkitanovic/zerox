@@ -51,6 +51,7 @@ header .elements {
   justify-content: space-around;
   align-items: center;
   padding: 40px;
+  transition: .5s;
 }
 
 /*-- LOGO --*/
@@ -311,7 +312,7 @@ nav #mover {
   color: var(--main-lighter-color);
   font-size: 20px;
   text-align: center;
-  margin-bottom: -1%;
+  margin-bottom: 0;
 }
 
 .section h2 {
@@ -986,4 +987,11 @@ nav #mover {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.3);
+}
+
+.scrolled {
+  padding-top:10px!important;
+  padding-bottom: 10px!important;
+  background:var(--main-lighter-color);
+  box-shadow: 0 0 15px 5px var(--main-color);
 }

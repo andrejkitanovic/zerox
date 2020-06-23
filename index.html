@@ -38,7 +38,7 @@
           ></a
         >
         <nav>
-          <div class="navigation">
+          <div class="navigation ">
             <div id="mover"></div>
             <a href="#" class="active">Home</a>
             <a href="about.html">About</a>
@@ -222,9 +222,18 @@
     <script src="js/nav.js"></script>
 
     <script>
+
       $(".number").counterUp({
-        time:2000
+        time:1000
       });
+
+      $(window).on('scroll', () => {
+        if($(window).scrollTop()){
+          $('.elements').addClass('scrolled');
+        }else {
+          $('.elements').removeClass('scrolled');
+        }
+      })
     </script>
   </body>
 </html>
