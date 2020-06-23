@@ -25,6 +25,8 @@
       src="https://kit.fontawesome.com/ae98d3c342.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="libs/jquery.min.js"></script>
   </head>
 
   <body>
@@ -182,11 +184,11 @@
 
       <div class="stats">
         <div class="stat">
-          <h2><span class="number">100</span>+</h2>
+          <h2><span class="number">80</span>+</h2>
           <p>Satisfied customers</p>
         </div>
         <div class="stat">
-          <h2><span class="number">500</span>+</h2>
+          <h2><span class="number">50</span>+</h2>
           <p>Completed projects</p>
         </div>
         <div class="stat">
@@ -200,11 +202,24 @@
       </div>
     </main>
 
+
+
+
+    <script src="libs/jquery.waypoints.min.js"></script>
+    <script src="libs/jquery.counterup.min.js"></script>
+    
+
     <script src="js/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sketch.min.js"></script>
     <script src="js/comet.js"></script>
     <script src="js/auto-typing.js"></script>
     <script src="js/nav.js"></script>
+
+    <script>
+      $(".number").counterUp({
+        time:2000
+      });
+    </script>
   </body>
 </html>
