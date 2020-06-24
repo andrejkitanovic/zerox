@@ -113,193 +113,6 @@ nav #mover {
   opacity: 0;
 }
 
-/*-- MAIN --*/
-
-.blue-home {
-  padding-top: 20vh;
-  height: 100vh;
-  background: var(--main-color);
-}
-
-.blue-contact {
-  position: absolute;
-  background: var(--main-color);
-  height: 100%;
-  width: 50%;
-  right: 0;
-  z-index: 1;
-}
-
-/*-- BANNER --*/
-
-.banner {
-  position: absolute;
-  left: 5%;
-  top: 150px;
-  width: 90%;
-  height: 80vh;
-  background-color: var(--main-lighter-color);
-  border-radius: 20px;
-  z-index: 2;
-  overflow: hidden;
-  box-shadow: 0px 0px 7px 0px #1212126e;
-  transform-style: preserve-3d;
-}
-
-.banner #line {
-  position: absolute;
-  width: 25%;
-  height: 150%;
-  background-color: var(--components-color);
-  transform: rotate(40deg) translateY(100%);
-  bottom: -10%;
-  animation: a 1s 1 forwards;
-  animation-delay: 0.6s;
-  border-radius: 25px;
-  box-shadow: 0px 0px 15px 0px #1212126e;
-  z-index: 6;
-}
-
-.banner #linev {
-  position: absolute;
-  width: 150%;
-  height: 30%;
-  background-color: var(--components-color);
-  transform: rotate(-5deg) translateX(0);
-  right: -10%;
-  bottom: -10%;
-  animation: b 1s 1;
-  border-radius: 25px;
-  box-shadow: 0px 0px 15px 0px #1212126e;
-  z-index: 5;
-}
-
-.banner #linez {
-  position: absolute;
-  width: 150%;
-  height: 30%;
-  background-color: var(--components-color);
-  transform: rotate(10deg) translateX(-100%);
-  left: -10%;
-  bottom: -30%;
-  animation: c 1s 1 forwards;
-  animation-delay: 0.7s;
-  border-radius: 25px;
-  box-shadow: 0px 0px 15px 0px #1212126e;
-  z-index: 11;
-}
-
-.banner #lined {
-  position: absolute;
-  width: 25%;
-  height: 120%;
-  background-color: var(--components-color);
-  transform: rotate(-10deg) translateY(100%);
-  right: 5%;
-  bottom: -10%;
-  animation: d 1s 1 forwards;
-  animation-delay: 0.7s;
-  border-radius: 25px;
-  box-shadow: 0px 0px 15px 0px #1212126e;
-  z-index: 4;
-}
-
-@keyframes a {
-  from {
-    transform: rotate(40deg) translateY(100%);
-  }
-  to {
-    transform: rotate(40deg) translateY(0);
-  }
-}
-
-@keyframes b {
-  from {
-    transform: rotate(-5deg) translateX(100%);
-  }
-  to {
-    transform: rotate(-5deg) translateX(0);
-  }
-}
-
-@keyframes c {
-  from {
-    transform: rotate(10deg) translateX(-100%);
-  }
-  to {
-    transform: rotate(10deg) translateX(0);
-  }
-}
-
-@keyframes d {
-  from {
-    transform: rotate(-10deg) translateY(100%);
-  }
-  to {
-    transform: rotate(-10deg) translateY(0);
-  }
-}
-
-.banner .title {
-  font-size: calc(20px + 1.5vw);
-  text-align: right;
-  margin-right: 5%;
-  margin-top: 5%;
-  color: #fff;
-  margin-left: 50%;
-}
-
-.banner .title h1 {
-  font-size: calc(40px + 3vw);
-}
-
-.banner .title h3 {
-  font-size: calc(30px + 1vw);
-  margin-top: 1%;
-  margin-bottom: 5%;
-  color: var(--components-color);
-}
-
-.banner .title button {
-  font-size: 20px;
-  padding: 15px 80px;
-  background: #28bffe;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-}
-
-/*-- SOCIAL MEDIA --*/
-
-.social-media {
-  justify-content: space-between;
-  display: flex;
-  position: absolute;
-  right: 5%;
-  bottom: 7%;
-  transform: rotate(-5deg);
-  width: 300px;
-  height: 50px;
-  z-index: 6;
-}
-
-.social-media a {
-  position: relative;
-  height: 80px;
-  width: 80px;
-  background: var(--main-lighter-color);
-  border-radius: 50%;
-}
-
-.social-media a i {
-  position: absolute;
-  color: #f2ab41;
-  font-size: 35px;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
 /*-- PORTFOLIO --*/
 
 .section {
@@ -432,8 +245,6 @@ nav #mover {
   text-decoration: none;
   color: #fff;
 }
-
-/*-- STATS --*/
 
 /*-- CONTACT --*/
 
@@ -883,23 +694,24 @@ nav #mover {
   .nav-links {
     position: fixed;
     height: 100%;
-    width: 100%;
+    width: 150px;
+    right:0;
     flex-direction: column;
     background-image: linear-gradient(
       30deg,
       var(--main-lighter-color) 40%,
       var(--main-color) 100%
     );
-    clip-path: circle(0 at 90% -50%);
-    -webkit-clip-path: circle(0 at 90% -50%);
+    clip-path: circle(0 at 50% 50%);
+    -webkit-clip-path: circle(0 at 50% 50%);
     transition: all 1s ease-out;
     pointer-events: none;
     z-index: 50;
   }
 
   .open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(150% at 90% -10%);
+    clip-path: circle(100% at 50% 50%);
+    -webkit-clip-path: circle(100% at 50% 50%);
     pointer-events: all;
   }
 
