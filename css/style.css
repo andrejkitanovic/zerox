@@ -836,28 +836,21 @@ nav #mover {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 520px;
+  width: 480px;
+  height: 400px;
   background: #fff;
-  border-radius: 20px;
   box-shadow: 0 0 15px #00000026;
 }
 
 .swiper-slide .imgSlide{
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 270px;
   overflow: hidden;
-  border-top-left-radius: 20px;
-  border-top-right-radius:20px;
 }
 
 .swiper-slide .imgSlide img{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  width: 80%;
+  width: 100%;
 }
 .swiper-slide .slideDetails{
   box-sizing: border-box;
