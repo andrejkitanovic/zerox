@@ -1,27 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-170621109-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-170621109-1");
-    </script>
-
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <title>Zerox | Website developer team</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="image/favicon.png" />
 
@@ -54,11 +40,11 @@
         <nav>
           <div class="navigation">
             <div id="mover"></div>
-            <a href="#">Home</a>
-            <a href="#about-us">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="">Services</a>
-            <a href="">Contact</a>
+            <a href="#" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
           </div>
         </nav>
 
@@ -72,17 +58,18 @@
     </header>
 
     <ul class="nav-links">
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Portfolio</li></a>
-      <a href="#"><li>Services</li></a>
-      <a href="#"><li>Contact</li></a>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
 
     <main>
       <div class="loader_bg">
-        <div class="loader"></div>
-      </div>
+        <div class="loader">
+        </div>
+      </div>  
 
       <div class="blue-index">
         <img src="image/Screenshot_29-min.png" id="background" />
@@ -106,7 +93,7 @@
         </div>
       </div>
 
-      <div class="section" id="about-us">
+      <div class="section">
         <p class="about">About us</p>
         <h2>What we do</h2>
       </div>
@@ -219,15 +206,64 @@
         </div>
       </div>
 
-      <div class="section" id="portfolio">
+      <div class="section">
         <p class="about">Our portfolio</p>
         <h2>Our recent work</h2>
+      </div>
+
+      <div class="portfolio-section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="imgSlide">
+                <img src="image/Belviso_big3.png">
+              </div>
+              <div class="slideDetails">
+                <h3>Belviso<br><span>Cosmetic Studio</span></h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgSlide">
+                <img src="image/test.jpg" >
+              </div>
+              <div class="slideDetails">
+                <h3>Project 1 <br><span>Test</span></h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgSlide">
+                <img src="image/test.jpg" >
+              </div>
+              <div class="slideDetails">
+                <h3>Project 1 <br><span>Test</span></h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgSlide">
+                <img src="image/test.jpg" >
+              </div>
+              <div class="slideDetails">
+                <h3>Project 1 <br><span>Test</span></h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgSlide">
+                <img src="image/test.jpg" >
+              </div>
+              <div class="slideDetails">
+                <h3>Project 1 <br><span>Test</span></h3>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </main>
 
     <script src="libs/jquery.waypoints.min.js"></script>
     <script src="libs/jquery.counterup.min.js"></script>
-
+    <script src="js/swiper.min.js"></script>
     <script src="js/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sketch.min.js"></script>
@@ -236,5 +272,23 @@
     <script src="js/nav.js"></script>
     <script src="js/countup.js"></script>
     <script src="js/loader.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate:30,
+          stretch: 0,
+          depth: 500,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
   </body>
 </html>

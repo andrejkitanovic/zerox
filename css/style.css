@@ -32,7 +32,6 @@ body {
   --main-color: #192065;
   --main-lighter-color: #2a338e;
   --components-color: #f2ab41;
-  height: 100%;
   background-color: var(--background-color) !important;
 }
 
@@ -821,3 +820,57 @@ nav #mover {
   box-shadow: 0px 0px 15px #00000026;
 }
 
+
+
+.potfolio-section{
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 520px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00000026;
+}
+
+.swiper-slide .imgSlide{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px;
+}
+
+.swiper-slide .imgSlide img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+}
+.swiper-slide .slideDetails{
+  box-sizing: border-box;
+  padding: 20px;
+}
+.swiper-slide .slideDetails h3{
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+.swiper-slide .slideDetails h3 span{
+  font-size: 20px;
+  color:#2a338e;
+}
