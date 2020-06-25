@@ -406,6 +406,7 @@ nav #mover {
 .swiper-slide .imgSlide img{
   width: 100%;
 }
+
 .swiper-slide .slideDetails{
   box-sizing: border-box;
   padding: 20px;
@@ -820,6 +821,16 @@ nav #mover {
 
   .text-auto {
     bottom: 5%;
+  }
+
+  .swiper-slide {
+    width: 320px;
+    height: 267px;
+  }
+  
+  .swiper-slide .imgSlide{
+    width: 100%;
+    height: 180px;
   }
 }
 
