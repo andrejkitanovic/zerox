@@ -9,6 +9,8 @@
     <title>Zerox | Website developer team</title>
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css">
+
     <link rel="icon" type="image/png" href="image/favicon.png" />
 
     <!-- To import -->
@@ -100,7 +102,7 @@
 
       <div class="cards-wrapper">
         <div class="cards-container">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="imgBx" data-text="Development">
               <i class="fas fa-file-code"></i>
             </div>
@@ -115,7 +117,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
             <div class="imgBx" data-text="Support">
               <i class="fas fa-headset"></i>
             </div>
@@ -130,7 +132,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="200"> 
             <div class="imgBx" data-text="Design">
               <i class="fas fa-edit"></i>
             </div>
@@ -141,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="imgBx" data-text="Logo">
               <i class="fab fa-stumbleupon"></i>
             </div>
@@ -156,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
             <div class="imgBx" data-text="Promotion">
               <i class="fas fa-poll"></i>
             </div>
@@ -167,7 +169,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
             <div class="imgBx" data-text="Optimization">
               <i class="fas fa-rocket"></i>
             </div>
@@ -279,7 +281,7 @@
 
       <div class="pricing-wrap">
         <div class="pricing">
-          <div class="contact-info contact-info-pc">
+          <div class="contact-info contact-info-pc" data-aos="fade-right" >
             <div
               class="contact-info-item"
               data-tilt
@@ -303,7 +305,7 @@
               </div>
             </div>
           </div>
-          <div class="contact-info contact-info-pc">
+          <div class="contact-info contact-info-pc" data-aos="fade-right" data-aos-delay="100">
             <div
               class="contact-info-item"
               data-tilt
@@ -327,7 +329,7 @@
               </div>
             </div>
           </div>
-          <div class="contact-info contact-info-pc">
+          <div class="contact-info contact-info-pc" data-aos="fade-right" data-aos-delay="200">
             <div
               class="contact-info-item"
               data-tilt
@@ -416,10 +418,14 @@
     <script src="libs/jquery.waypoints.min.js"></script>
     <script src="libs/jquery.counterup.min.js"></script>
     <script src="libs/swiper.min.js"></script>
+    <script src="libs/aos.js"></script>
+    <script src="libs/sketch.min.js"></script>
+    <script src="libs/vanilla-tilt.min.js"></script>
 
-    <script src="js/vanilla-tilt.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
-    <script src="js/sketch.min.js"></script>
     <script src="js/comet.js"></script>
     <script src="js/auto-typing.js"></script>
     <script src="js/nav.js"></script>
