@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <title>Zerox | Website developer team</title>
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="image/favicon.png" />
 
@@ -67,9 +67,8 @@
 
     <main>
       <div class="loader_bg">
-        <div class="loader">
-        </div>
-      </div>  
+        <div class="loader"></div>
+      </div>
 
       <div class="blue-index">
         <img src="image/Screenshot_29-min.png" id="background" />
@@ -216,58 +215,60 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="imgSlide">
-                <img src="image/Screenshot_31.png">
+                <img src="image/Screenshot_31.png" />
               </div>
               <div class="slideDetails">
-                <h3>Belviso<br><span>Cosmetic Studio</span></h3>
+                <h3>Belviso<br /><span>Cosmetic Studio</span></h3>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="imgSlide">
-                <img src="image/reli.png">
+                <img src="image/reli.png" />
               </div>
               <div class="slideDetails">
-                <h3>Reli<br><span>Cars</span></h3>
+                <h3>Reli<br /><span>Cars</span></h3>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="imgSlide">
-                <img src="image/drmarijakitanovic.png">
+                <img src="image/drmarijakitanovic.png" />
               </div>
               <div class="slideDetails">
-                <h3>Dr Marija Kitanovic<br><span>Dentist</span></h3>
+                <h3>Dr Marija Kitanovic<br /><span>Dentist</span></h3>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="imgSlide">
-                <img src="image/billywillson.png">
+                <img src="image/billywillson.png" />
               </div>
               <div class="slideDetails">
-                <h3>Billy Willson<br><span>Marketing Company</span></h3>
+                <h3>Billy Willson<br /><span>Marketing Company</span></h3>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="imgSlide">
-                <img src="image/stonewall.png">
+                <img src="image/stonewall.png" />
               </div>
               <div class="slideDetails">
-                <h3>Stone Wall<br><span>Decoration</span></h3>
+                <h3>Stone Wall<br /><span>Decoration</span></h3>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="imgSlide">
-                <img src="image/vilamisti.png">
+                <img src="image/vilamisti.png" />
               </div>
               <div class="slideDetails">
-                <h3>Vila Misti<br><span>Apartman Site</span></h3>
+                <h3>Vila Misti<br /><span>Apartman Site</span></h3>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="imgSlide">
-                <img src="image/milosaltbausanierung.png">
+                <img src="image/milosaltbausanierung.png" />
               </div>
               <div class="slideDetails">
-                <h3>Milos Altbausanierung<br><span>Construction company</span></h3>
+                <h3>
+                  Milos Altbausanierung<br /><span>Construction company</span>
+                </h3>
               </div>
             </div>
           </div>
@@ -275,11 +276,17 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
+
+      <div class="section">
+        <p class="about">Services we Offer</p>
+        <h2>Pricing list</h2>
+      </div>
     </main>
 
     <script src="libs/jquery.waypoints.min.js"></script>
     <script src="libs/jquery.counterup.min.js"></script>
-    <script src="js/swiper.min.js"></script>
+    <script src="libs/swiper.min.js"></script>
+
     <script src="js/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sketch.min.js"></script>
@@ -288,36 +295,6 @@
     <script src="js/nav.js"></script>
     <script src="js/countup.js"></script>
     <script src="js/loader.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate:30,
-          stretch: 0,
-          depth: 500,
-          modifier: 1,
-          slideShadows: true,
-         
-        },
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-
-    //   var swiper = new Swiper('.swiper-container', {
-    //   slidesPerView: 1,
-    //   spaceBetween: 30,
-    //   loop: true,
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //   },
-    // });
-
-    </script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
