@@ -25,7 +25,7 @@
 
 :root {
   --background-color: #121212;
-  --letters-color:#fff;
+  --letters-color:#f8f9fa;
   --main-color: #192065;
   --main-lighter-color: #2a338e;
   --components-color: #f2ab41;
@@ -37,7 +37,7 @@ html {
 
 body {
   background-color: var(--background-color) !important;
-  transition: 1s background-color;
+  transition: .5s background-color;
 }
 
 /*-- LOADING --*/
@@ -925,4 +925,69 @@ nav #mover {
 
 #premium:after{
   border:22px solid #f2ab41;
+}
+
+.theme-button{
+  position: relative;
+  height: 80px;
+}
+
+.switch {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 40px;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:white;
+  transition: .5s;
+  border:3px solid white;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.slider:before{
+  position: absolute;
+  content: "";
+  bottom:14px;
+  top:8px;
+  background-color: #121212;
+  transition: .5s;
+}
+
+input:checked ~ .slider{
+  background-color: black;
+  border-color: black;
+}
+
+input:checked ~ .slider:before{
+  transform: translateX(-55px);
+  background: white;
+}
+
+.switch input{
+  display: none;
+}
+
+.slider.round{
+  border-radius: 20px;
+}
+
+.slider.round:before{
+  content: '';
+  top:0;
+  right:0;
+  width: 40%;
+  height: 100%;
+  border-radius: 20px;
+  transition: .5s;
 }

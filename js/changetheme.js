@@ -1,11 +1,8 @@
-const icon =  document.querySelector('.theme-icon')
 
-$('.theme-icon').click(() => {
+
+$('#checked').change(() => {
     themeToggle()
-    icon.querySelector('.animatable').classList.toggle('is-animated')
 })
-
-themeToggle()
 
 function themeToggle(){
     temp = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
