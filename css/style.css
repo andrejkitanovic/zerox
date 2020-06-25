@@ -845,8 +845,11 @@ nav #mover {
   font-weight: 600;
   padding-top: 15px;
   padding-bottom: 25px;
+ 
+}
+
+.contact-info-pc .contact-info-header h2{
   transform: translateZ(40px);
-  
 }
 
 .contact-info-header h2::after{
@@ -861,6 +864,10 @@ nav #mover {
   font-size: 20px;
   padding-bottom: 10px;
   margin:20px 0;
+
+}
+
+.contact-info-pc .contact-info-components span{
   transform: translateZ(40px);
 }
 
@@ -880,9 +887,12 @@ nav #mover {
 .contact-info-pricing h3{
   position: relative;
   color:#fff;
-  transform: translateZ(40px);
   padding-top: 110px;
   padding-bottom: 110px;
+}
+
+.contact-info-pc .contact-info-pricing h3{
+  transform: translateZ(40px);
 }
 
 .contact-info-pricing{
