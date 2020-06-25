@@ -827,7 +827,7 @@ nav #mover {
 }
 
 .swiper-container {
-  width: 100%;
+  width: 70%;
   padding-top: 50px;
   padding-bottom: 50px;
   
@@ -866,4 +866,7 @@ nav #mover {
 .swiper-slide .slideDetails h3 span{
   font-size: 20px;
   color:#2a338e;
+}
+.swiper-pagination-bullet{
+  background:#fff;
 }
