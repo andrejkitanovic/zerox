@@ -949,9 +949,9 @@ nav #mover {
   left:0;
   right:0;
   bottom:0;
-  background:white;
+  background:var(--letters-color);
   transition: .5s;
-  border:3px solid white;
+  border:3px solid var(--letters-color);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -960,18 +960,13 @@ nav #mover {
   content: "";
   bottom:14px;
   top:8px;
-  background-color: #121212;
+  background-color: var(--background-color);
   transition: .5s;
 }
 
-input:checked ~ .slider{
-  background-color: black;
-  border-color: black;
-}
 
 input:checked ~ .slider:before{
   transform: translateX(-55px);
-  background: white;
 }
 
 .switch input{
