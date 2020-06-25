@@ -813,7 +813,7 @@ nav #mover {
   position: relative;
   background: linear-gradient( 
     var(--main-lighter-color) 0%,
-    var(--main-color) 80%
+    var(--main-color) 70%
   );
   padding: 30px 0px;
   margin:30px 10px;
