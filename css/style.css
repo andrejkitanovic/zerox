@@ -1055,6 +1055,7 @@ input:checked ~ .slider:before{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%,-50%);
   width: 22.7272727273px;
   height: 22.7272727273px;
   border-radius: 50%;
@@ -1066,6 +1067,7 @@ input:checked ~ .slider:before{
   left: 50%;
   top: 35%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%,-50%);
   width: 4px;
   height: 12px;
   background-color: #ccc;
