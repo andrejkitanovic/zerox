@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-170621109-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-170621109-2");
+    </script>
+    
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -51,7 +66,6 @@
           </div>
         </nav>
 
-
         <div class="mobile-nav">
           <div class="hamburger">
             <div class="line"></div>
@@ -98,11 +112,10 @@
 
       <div class="theme-button">
         <label class="switch">
-          <input type="checkbox" id="checked">
+          <input type="checkbox" id="checked" />
           <span class="slider round"></span>
         </label>
       </div>
-      
 
       <div class="section" id="about-us">
         <p class="about">About us</p>
