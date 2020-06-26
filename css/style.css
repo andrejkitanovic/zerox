@@ -25,7 +25,7 @@
 
 :root {
   --background-color: #121212;
-  --letters-color:#EEEEEE;
+  --letters-color:#f4f4f4;
   --main-color: #192065;
   --main-lighter-color: #2a338e;
   --components-color: #f2ab41;
@@ -325,6 +325,7 @@ nav #mover {
   min-width: 400px;
   margin-left: 40px;
   margin-right: 40px;
+  box-shadow: 0 0 15px #00000026;
 }
 
 .cards-container .card .imgBx {
