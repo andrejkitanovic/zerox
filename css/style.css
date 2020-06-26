@@ -1050,7 +1050,7 @@ input:checked ~ .slider:before{
 .toggle--push .toggle--btn, .toggle--push .toggle--btn:before, .toggle--push .toggle--btn:after {
   transition-duration: 150ms;
 }
-.toggle--push .toggle--btn:before {
+/* .toggle--push .toggle--btn:before {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1061,7 +1061,7 @@ input:checked ~ .slider:before{
   border-radius: 50%;
   background-color: var(--components-color);
   box-shadow: inset 0 0 0 5px #ccc, inset 0 0 0 14px #f9f8f6;
-}
+} */
 .toggle--push .toggle--btn:after {
   position: absolute;
   left: 50%;
