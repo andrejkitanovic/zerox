@@ -42,7 +42,7 @@ body {
 
 /*-- LOADING --*/
 
-.loader_bg {
+ /* .loader_bg {
   position: fixed;
   z-index: 99999;
   background: var(--main-color);
@@ -57,6 +57,28 @@ body {
   position: absolute;
   top: calc(50vh - 75px);
   left: calc(50vw - 75px);
+} */
+.loader_bg{
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+  position: fixed;
+  margin-left: auto;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  transition: 0.4s ease-in;
+}
+
+.loader_bg .loader{
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 150px;
+
 }
 .loader:before,
 .loader:after {
