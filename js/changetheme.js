@@ -1,6 +1,6 @@
 
 
-$('#checked').change(() => {
+$('#toggle--push').change(() => {
     themeToggle()
 })
 
