@@ -448,7 +448,7 @@
 
         <form class="contact-form row" name="contact" method="POST" data-netlify="true">
           <div class="form-field col-xl-6">
-            <input id="name" class="input-text js-input" type="text" required />
+            <input id="name" class="input-text js-input" type="text" name="name" required />
             <label class="label" for="name">Name</label>
           </div>
           <div class="form-field col-xl-6">
@@ -456,6 +456,7 @@
               id="email"
               class="input-text js-input"
               type="email"
+              name="email"
               required
             />
             <label class="label" for="email">E-mail</label>
@@ -465,6 +466,7 @@
               id="budget"
               class="input-text js-input"
               type="text"
+              name="budget"
             />
             <label class="label" for="message">Budget</label>
           </div>
@@ -473,12 +475,13 @@
               id="message"
               class="input-text js-input"
               type="text"
+              name="title"
               required
             />
             <label class="label" for="message">Message Title</label>
           </div>
           <div class="form-field  col-xl-12">
-            <textarea class="js-input" name="" id="" rows="5"></textarea>
+            <textarea class="js-input" name="message" id="" rows="5"></textarea>
             <label class="label" for="message">Message</label>
           </div>
           <div class="form-field col x-100 align-center">
