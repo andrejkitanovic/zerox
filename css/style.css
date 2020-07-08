@@ -1173,3 +1173,65 @@ input:-webkit-autofill:active  {
   border: none;
   cursor: pointer;
 }
+
+/*-- SOCIAL MEDIA --*/
+
+.social-media{
+  margin:20px;
+}
+
+.social-media-list {
+  position: relative;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.social-media-list li a {
+  color: var(--background-color);
+}
+
+.social-media-list li {
+  position: relative; 
+  top: 0;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 10px auto;
+  line-height: 70px;
+  border-radius: 50%;
+  color: var(--background-color);
+  background-color: var(--letters-color);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+  margin:5px;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px var(--components-color);
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: var(--components-color); 
+
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: var(--letters-color);
+}
