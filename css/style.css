@@ -1044,7 +1044,7 @@ input:checked ~ .slider:before {
   height: 50px;
   background-color: #f9f8f6;
   border-radius: 50%;
-  box-shadow: 0 5px 10px 0px #333, 0 5px 20px 0px #cccccca1;
+  box-shadow: 0 5px 10px 0px #333, 0 2px 10px 0px #cccccc52;
 }
 .toggle--push .toggle--btn,
 .toggle--push .toggle--btn:before,
