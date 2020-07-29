@@ -276,8 +276,8 @@ nav #mover {
   padding-top: 100px;
   margin-top: 2%;
   margin-bottom: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 80%;
+  margin:auto
 }
 
 .section .about {
@@ -548,6 +548,12 @@ nav #mover {
 }
 
 @media (max-width: 992px) {
+
+  .contact-form {
+    width:100%!important;
+    left:0!important;
+  }
+
   .blue-index {
     height: 90vh;
   }
@@ -1176,7 +1182,7 @@ input:-webkit-autofill:active  {
 
 /*-- SOCIAL MEDIA --*/
 
-.social-media{
+/* .social-media{
   margin:20px;
 }
 
@@ -1234,4 +1240,4 @@ input:-webkit-autofill:active  {
 
 .social-media-list li:hover a {
   color: var(--letters-color);
-}
+} */
